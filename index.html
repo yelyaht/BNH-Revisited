@@ -1,1 +1,49 @@
-<!--intentionally blanck for now -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bear · Ninja · Hunter — Revisited</title>
+</head>
+<body>
+  <main>
+    <h2>Bear · Ninja · Hunter — Revisited</h2>
+
+    <div class="rules">
+      <ul>
+        <li>Bear beats Ninja</li>
+        <li>Ninja beats Hunter</li>
+        <li>Hunter beats Bear</li>
+        <li>Same choice = Tie</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="choices" role="group" aria-label="Choose your fighter">
+      <button class="btn choice" data-choice="Bear">Bear</button>
+      <button class="btn choice" data-choice="Ninja">Ninja</button>
+      <button class="btn choice" data-choice="Hunter">Hunter</button>
+    </div>
+
+    <hr class="divider">
+
+    <div id="results" class="results hidden" aria-live="polite">
+      <p id="roundText" class="round-text"></p>
+      <p id="detailText" class="detail-text"></p>
+
+      <div id="counter" class="counter hidden">
+        <span>Player <strong id="playerWins">0</strong></span>
+        <span> — </span>
+        <span>Computer <strong id="computerWins">0</strong></span>
+      </div>
+
+      <div class="actions">
+        <button id="againBtn" class="btn small hidden">Play Again</button>
+        <button id="endBtn" class="btn small subtle hidden">End Session</button>
+      </div>
+    </div>
+  </main>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
